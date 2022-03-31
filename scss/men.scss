@@ -1,0 +1,149 @@
+/* font */
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 900;
+    src:url(../font/NanumSquareEB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 500;
+    src:url(../font/NanumSquareB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 300;
+    src:url(../font/NanumSquareR.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 100;
+    src: url(../font/NanumSquareL.woff) format("woff");
+}
+
+
+/*****************공통*****************/
+$titleFont: 35px; 
+$subTitlefont: 20px;
+$aFont:18px;
+
+$title1200:20px;
+$subTitle1200:18px;
+$aFont1200:16px;
+
+
+$fontColor:#111;
+$subFontColor:#949494;
+$whiteColor:#eee;
+$breitlingColor:#feca35;
+
+
+//반응형
+$mobile1200: 1200px;
+$mobile767: 767px;
+$mobile640: 640px;
+$mobile480: 480px;
+$mobile370: 370px;
+
+@mixin respond($mobile){
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}
+
+
+.mainPage{
+    overflow: hidden;
+    #fullpage{
+        width: 100%;
+        .container{
+            width: 100%;
+            height: 68vh;
+            margin-top: 100px;
+            box-sizing: border-box;
+
+            .innerBox{
+                max-width: 1260px;
+                margin: 0 auto;
+                height: 100%;
+
+                .bannerBox{
+                    width: 100%;
+
+                    .banner{
+                        width: 100%;
+                        height: 170px;
+                        position: relative;
+                        
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background: rgba(0, 0, 0, 0.7);
+                        }
+                        
+
+                        .textBox{
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            text-align: center;
+                            color: $whiteColor;
+                            z-index: 1;
+                            
+                            .t1{
+                                font-size: $subTitlefont;
+                                padding-top: 50px;
+                                font-weight: 500;
+                            }
+                            .t2{
+                                font-size: $titleFont;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .contents{
+                    background: url(../image/logoBackground.png)center no-repeat;
+                    transform: scale(.6);
+                    background-size: auto;
+                    height: 75%;
+                    .con{
+                        text-align: center;
+                        padding-top: 150px;
+
+                        .tx1{
+                            font-size: $titleFont;
+                        }
+                        .tx2{
+                            font-size: $subTitlefont;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond($mobile767){
+    .mainPage{
+        #fullpage{
+            .container{
+                .innerBox{
+                    .contents{
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}

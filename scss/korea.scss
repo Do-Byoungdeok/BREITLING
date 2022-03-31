@@ -1,0 +1,133 @@
+/* font */
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 900;
+    src:url(../font/NanumSquareEB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 500;
+    src:url(../font/NanumSquareB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 300;
+    src:url(../font/NanumSquareR.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 100;
+    src: url(../font/NanumSquareL.woff) format("woff");
+}
+
+
+/*****************공통*****************/
+$titleFont: 35px; 
+$subTitlefont: 20px;
+$aFont:18px;
+
+$title1200:20px;
+$subTitle1200:18px;
+$aFont1200:16px;
+
+
+$fontColor:#111;
+$subFontColor:#949494;
+$whiteColor:#eee;
+$breitlingColor:#feca35;
+
+
+//반응형
+$mobile1200: 1200px;
+$mobile767: 767px;
+$mobile640: 640px;
+$mobile480: 480px;
+$mobile370: 370px;
+
+@mixin respond($mobile){
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}
+
+
+
+.mainPage{
+    overflow: hidden;
+    #fullpage{
+        width: 100%;
+        .container{
+            width: 100%;
+            height: 68vh;
+            margin-top: 100px;
+            box-sizing: border-box;
+
+            .innerBox{
+                max-width: 1260px;
+                margin: 0 auto;
+                height: 100%;
+
+                .bannerBox{
+                    width: 100%;
+
+                    .banner{
+                        width: 100%;
+                        height: 170px;
+                        position: relative;
+                        
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background: rgba(0, 0, 0, 0.7);
+                        }
+                        
+
+                        .textBox{
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            text-align: center;
+                            color: $whiteColor;
+                            z-index: 1;
+                            
+                            .t1{
+                                font-size: $subTitlefont;
+                                padding-top: 60px;
+                                font-weight: 500;
+                            }
+                            .t2{
+                                font-size: $titleFont;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .contentsMap{
+                    height: 70%;
+                    position: relative;
+                    
+                    #map{
+                        width: 100%;
+                        height: 100%;
+                        .customoverlay {position:relative;bottom:50px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+                        .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+                        .customoverlay a {display:block;text-decoration:none;color:#111;text-align:center;border-radius:6px;font-size:14px;font-weight:500;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+                        .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:500;}
+                        .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+                    }
+                }
+            }
+        }
+    }
+}

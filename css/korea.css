@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* font */
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 900;
+  src: url(../font/NanumSquareEB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 500;
+  src: url(../font/NanumSquareB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 300;
+  src: url(../font/NanumSquareR.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 100;
+  src: url(../font/NanumSquareL.woff) format("woff");
+}
+/*****************공통*****************/
+.mainPage {
+  overflow: hidden;
+}
+.mainPage #fullpage {
+  width: 100%;
+}
+.mainPage #fullpage .container {
+  width: 100%;
+  height: 68vh;
+  margin-top: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.mainPage #fullpage .container .innerBox {
+  max-width: 1260px;
+  margin: 0 auto;
+  height: 100%;
+}
+.mainPage #fullpage .container .innerBox .bannerBox {
+  width: 100%;
+}
+.mainPage #fullpage .container .innerBox .bannerBox .banner {
+  width: 100%;
+  height: 170px;
+  position: relative;
+}
+.mainPage #fullpage .container .innerBox .bannerBox .banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mainPage #fullpage .container .innerBox .bannerBox .banner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.mainPage #fullpage .container .innerBox .bannerBox .banner .textBox {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  color: #eee;
+  z-index: 1;
+}
+.mainPage #fullpage .container .innerBox .bannerBox .banner .textBox .t1 {
+  font-size: 20px;
+  padding-top: 60px;
+  font-weight: 500;
+}
+.mainPage #fullpage .container .innerBox .bannerBox .banner .textBox .t2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.mainPage #fullpage .container .innerBox .contentsMap {
+  height: 70%;
+  position: relative;
+}
+.mainPage #fullpage .container .innerBox .contentsMap #map {
+  width: 100%;
+  height: 100%;
+}
+.mainPage #fullpage .container .innerBox .contentsMap #map .customoverlay {
+  position: relative;
+  bottom: 50px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #ddd;
+  float: left;
+}
+.mainPage #fullpage .container .innerBox .contentsMap #map .customoverlay:nth-of-type(n) {
+  border: 0;
+  -webkit-box-shadow: 0px 1px 2px #888;
+          box-shadow: 0px 1px 2px #888;
+}
+.mainPage #fullpage .container .innerBox .contentsMap #map .customoverlay a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  background: #d95050;
+  background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+}
+.mainPage #fullpage .container .innerBox .contentsMap #map .customoverlay .title {
+  display: block;
+  text-align: center;
+  background: #fff;
+  margin-right: 35px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mainPage #fullpage .container .innerBox .contentsMap #map .customoverlay:after {
+  content: "";
+  position: absolute;
+  margin-left: -12px;
+  left: 50%;
+  bottom: -12px;
+  width: 22px;
+  height: 12px;
+  background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png");
+}

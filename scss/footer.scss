@@ -1,0 +1,227 @@
+/* font */
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 900;
+    src:url(../font/NanumSquareEB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 500;
+    src:url(../font/NanumSquareB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 300;
+    src:url(../font/NanumSquareR.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 100;
+    src: url(../font/NanumSquareL.woff) format("woff");
+}
+
+
+/*****************공통*****************/
+$titleFont: 35px; 
+$subTitlefont: 20px;
+$aFont:18px;
+
+$title1200:20px;
+$subTitle1200:18px;
+$aFont1200:16px;
+
+
+$fontColor:#111;
+$subFontColor:#949494;
+$whiteColor:#eee;
+$breitlingColor:#feca35;
+
+
+
+/*****************반응형*****************/
+$mobile1200: 1200px;
+$mobile767: 767px;
+$mobile640: 640px;
+$mobile480: 480px;
+$mobile370: 370px;
+
+@mixin respond($mobile){
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}
+
+
+/*****************footer*****************/
+.mainPage{
+    footer{
+        
+        max-height: 450px;
+        width: 100%;
+
+        .topFooter{
+            background: #ebeef0;
+
+            .topFooterBox{
+                max-width: 1920px;
+                margin: 0 auto;
+                text-align: center;
+
+                #navFooter{
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 0 35px;
+
+                    li{
+                        float: left;
+    
+                        a{
+                            display: block;
+                            font-size: $aFont;
+                            font-weight: 500;
+                            line-height: 50px;
+                            color: $fontColor;
+                            padding: 0 40px;
+                            transition: 0.2s;
+    
+                            &:hover{
+                                color: $breitlingColor;
+                            }
+                        }
+                    }
+                }
+                .snsBox{
+
+                    .snsList{
+                        display: inline-block;
+                        width: 18%;
+
+                        li{
+                            float: left;
+                            margin: 0px 8%;
+                            a{
+                                padding: 3px;
+                                line-height: 7px;
+                                display: block;
+                                background: #eee;
+                                border-radius: 50px;
+                                width: 24px;
+
+                                img{
+                                    width: 100%;
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .bottomFooter{
+            background: $fontColor;
+            text-align: left;
+            padding-top: 20px;
+
+            .bottomFooterBox{
+                max-width: 1920px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+
+                address{
+                    color: $whiteColor;
+                    margin-left: 40px;
+                    p{
+                        font-size: 15px;
+                    }
+                    
+                    strong{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.mainPage{
+    
+    @include respond($mobile1200){/*****************footer*****************/
+        .footer{
+            .topFooter{
+                display: none;
+            }
+            .bottomFooter{
+                padding-top: 20px;
+                .bottomFooterBox{
+                    address{
+                        strong{
+                            font-size: 17px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile767){
+        .footer{
+            .bottomFooter{
+                
+                .bottomFooterBox{
+                    address{
+                        strong{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile480){
+        .footer{
+            .bottomFooter{
+                
+                .bottomFooterBox{
+                    address{
+                        strong{
+                            
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile370){
+        .footer{
+            .bottomFooter{
+                
+                .bottomFooterBox{
+                    flex-wrap: wrap;
+                    justify-content: left;
+                    address{
+                        margin-left: 20px;
+                        strong{
+                            font-size: 14px;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

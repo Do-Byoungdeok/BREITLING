@@ -1,0 +1,373 @@
+/* font */
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 900;
+    src:url(../font/NanumSquareEB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 500;
+    src:url(../font/NanumSquareB.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 300;
+    src:url(../font/NanumSquareR.woff) format("woff");
+}
+@font-face {
+    font-family: "NanumSquare";
+    font-weight: 100;
+    src: url(../font/NanumSquareL.woff) format("woff");
+}
+
+
+/*****************공통*****************/
+$titleFont: 35px; 
+$subTitlefont: 20px;
+$aFont:18px;
+
+$title1200:20px;
+$subTitle1200:18px;
+$aFont1200:16px;
+
+
+$fontColor:#111;
+$subFontColor:#949494;
+$whiteColor:#eee;
+$breitlingColor:#feca35;
+
+/*****************반응형*****************/
+$mobile1200: 1200px;
+$mobile767: 767px;
+$mobile640: 640px;
+$mobile480: 480px;
+$mobile370: 370px;
+
+@mixin respond($mobile){
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}
+
+
+
+/*****************헤더*****************/
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    border-bottom: 2px solid #949494;
+    background: white;
+    z-index: 100;
+
+    .headerBox{
+        position: relative;
+
+        .logo{
+            position: absolute;
+            width: 120px;
+            height: 70px;
+            top: 50%;
+            left: 100px;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .gnb{
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+
+            li{
+                float: left;
+                margin-left: 40px;
+                width: 24px;
+
+                img{
+                    width: 100%;
+                }
+                &:nth-child(1){
+                    a{
+
+                        vertical-align: -5px;
+                    }
+                }
+                &:nth-child(2){
+                    width: 23px;
+                    a{
+                        vertical-align: -2px;
+                    }
+                }
+                &:nth-child(3){
+                    a{
+
+                        vertical-align: -4px;
+                    }
+                }
+                &:nth-child(4){
+                    a{
+
+                        vertical-align: -7px;
+                    }
+                }
+            }
+        }
+
+        .hamBtn{
+            
+            position: absolute;
+            width: 30px;
+            right: 38px;
+            top: 25px;
+            display: block;
+            cursor: pointer;
+
+            span{
+                display: none;
+                width: 100%;
+                height: 2px;
+                background: $fontColor;
+                transition: all .3s;
+                position: relative;
+                margin-top: 6px;
+            }
+
+            /***애니메이션 ***/
+            &.active{
+                span:nth-child(1){
+                    animation: ease .7s top forwards;
+                }
+                span:nth-child(2){
+                    animation: ease .7s scaled forwards;
+                }
+                span:nth-child(3){
+                    animation: ease .7s bottom forwards;
+                }
+            }
+            &{
+                span:nth-child(1){
+                    animation: ease .7s top-2 forwards;
+                }
+                span:nth-child(2){
+                    animation: ease .7s scaled-2 forwards
+                }
+                span:nth-child(3){
+                    animation: ease .7s bottom-2 forwards;
+                }
+            }
+            @keyframes top {
+                0% {
+                    top: 0;
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0);
+                }
+            
+                50% {
+                    top: 11px;
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0);
+                }
+            
+                100% {
+                    top: 11px;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                } 
+            }
+            @keyframes top-2 {
+                0% {
+                top: 11px;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                }
+            
+                50% {
+                top: 11px;
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                }
+            
+                100% {
+                top: 0;
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                }
+            }
+            @keyframes bottom {
+                0% {
+                bottom: 0;
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                }
+            
+                50% {
+                bottom: 5px;
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                }
+            
+                100% {
+                bottom: 5px;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+                }
+            }
+            @keyframes bottom-2 {
+                0% {
+                bottom: 5px;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+                }
+            
+                50% {
+                bottom: 5px;
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                }
+            
+                100% {
+                bottom: 0;
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+                }
+            }
+            @keyframes scaled {
+                50% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                }
+            
+                100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                }
+            }
+            @keyframes scaled-2 {
+                0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                }
+            
+                50% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                }
+            
+                100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                }
+            }
+        }
+
+        nav{
+            text-align: center;
+
+            #menu{
+                display: inline-block;
+                vertical-align: top;
+                padding: 25px 35px;
+
+                li{
+                    float: left;
+
+                    a{
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 50px;
+                        color: $fontColor;
+                        padding: 0 40px;
+                        transition: 0.2s;
+
+                        &:hover{
+                            color: $breitlingColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+header {/***************** header *****************/
+    @include respond($mobile1200){
+        height: 70px;
+    }
+
+    .headerBox{
+
+        .logo{
+            img{
+            }
+            @include respond($mobile1200){
+                margin-top: 30px;
+                width: 90px;
+                height: 40px;
+                left: 50px;
+            }
+            @include respond($mobile767){
+                left: 20px;
+            }
+            @include respond($mobile480){
+                width: 75px;
+                height: 30px;
+            }
+        }
+
+        .gnb{
+            li{
+                img{
+                }
+            }
+            @include respond($mobile1200){
+                display: none;
+            }
+        }
+
+        .hamBtn{
+            span{
+                @include respond($mobile1200){
+                    display: block;
+                }
+            }
+        @include respond($mobile1200){
+            z-index: 1000;
+        }
+        }
+
+        nav{
+            #menu{
+                li{
+                    a{
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        @include respond($mobile1200){
+            position: fixed;
+            top: 0;
+            right: -300px;
+            overflow: auto;
+            width: 300px;
+            height: 100%;
+            padding: 50px 20px;
+            box-sizing: border-box;
+            transition: right .3s ease-in-out;
+            background-color: #f0f0f0;
+        }
+        }
+    }
+    
+}

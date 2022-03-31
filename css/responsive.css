@@ -1,0 +1,387 @@
+@charset "UTF-8";
+/*****************공통*****************/
+.mainPage {
+  /*****************메인 배너*****************/
+  /*****************서비스*****************/
+}
+@media screen and (max-width: 1200px) {
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .mainText {
+    font-size: 80px;
+    left: 10%;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .mainTitle {
+    font-size: 25px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .subTitle {
+    font-size: 20px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem a {
+    width: 25%;
+    top: 53%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .mainText {
+    font-size: 40px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .mainTitle {
+    font-size: 20px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .subTitle {
+    font-size: 16px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem a {
+    width: 25%;
+    top: 53%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .mainText {
+    bottom: 20%;
+    left: 35%;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox {
+    text-align: center;
+    bottom: 14%;
+    left: 20%;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .mainTitle {
+    font-size: 20px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .subTitle {
+    font-size: 14px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem a {
+    top: 50%;
+    right: 33%;
+    width: 33%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .mainText {
+    font-size: 30px;
+    left: 34%;
+    bottom: 25%;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox {
+    left: 20%;
+    text-align: center;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .mainTitle {
+    font-size: 16px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .textBox .subTitle {
+    font-size: 14px;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem a {
+    right: 28%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem .mainText {
+    left: 29%;
+  }
+  .mainPage #fullpage .section.mainWrap .innerBox .bannerItem a {
+    right: 27%;
+  }
+}
+.mainPage #fullpage .section.mainWrap .pagerBox {
+  /**pager**/
+}
+@media screen and (max-width: 1200px) {
+  .mainPage #fullpage .section.mainWrap .pagerBox li a {
+    display: none;
+  }
+}
+.mainPage .sexWrap {
+  /*****************젠더*****************/
+}
+@media screen and (max-width: 1200px) {
+  .mainPage .sexWrap .sexBox {
+    margin: 0 2.5%;
+    padding: 10% 0;
+  }
+  .mainPage .sexWrap .sexBox .textBox {
+    width: 100%;
+    margin-left: 0;
+  }
+  .mainPage .sexWrap .sexBox .textBox .title {
+    font-size: 18px;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t1 {
+    font-size: 20px;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t2 {
+    font-size: 18px;
+    margin-top: 2%;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t3 {
+    font-size: 18px;
+  }
+  .mainPage .sexWrap .sexBox .gender li {
+    width: 35%;
+    margin: 5%;
+  }
+  .mainPage .sexWrap .sexBox .gender li a {
+    height: 420px;
+  }
+  .mainPage .sexWrap .sexBox .gender .women a {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainPage .sexWrap .sexBox .textBox .title {
+    font-size: 18px;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t1 {
+    font-size: 20px;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t2 {
+    font-size: 16px;
+    margin-top: 2%;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t3 {
+    font-size: 16px;
+  }
+  .mainPage .sexWrap .sexBox .gender li {
+    margin: 6%;
+  }
+  .mainPage .sexWrap .sexBox .gender li a {
+    height: 300px;
+  }
+  .mainPage .sexWrap .sexBox .gender .men a .t1 {
+    margin-top: 100px;
+  }
+  .mainPage .sexWrap .sexBox .gender .men a .t2 {
+    font-size: 20px;
+  }
+  .mainPage .sexWrap .sexBox .gender .women a .t1 {
+    margin-top: 100px;
+  }
+  .mainPage .sexWrap .sexBox .gender .women a .t2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .mainPage .sexWrap .sexBox .textBox .title {
+    font-size: 18px;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t1 {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t2 {
+    display: none;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t3 {
+    font-size: 14px;
+  }
+  .mainPage .sexWrap .sexBox .textBox .t3 strong {
+    font-size: 15px;
+  }
+  .mainPage .sexWrap .sexBox .gender li {
+    margin: 6%;
+  }
+  .mainPage .sexWrap .sexBox .gender li a {
+    height: 300px;
+  }
+  .mainPage .sexWrap .sexBox .gender .men a .t1 {
+    margin-top: 100px;
+  }
+  .mainPage .sexWrap .sexBox .gender .men a .t2 {
+    font-size: 20px;
+  }
+  .mainPage .sexWrap .sexBox .gender .men a span {
+    opacity: 1;
+  }
+  .mainPage .sexWrap .sexBox .gender .women a .t1 {
+    margin-top: 100px;
+  }
+  .mainPage .sexWrap .sexBox .gender .women a .t2 {
+    font-size: 20px;
+  }
+  .mainPage .sexWrap .sexBox .gender .women a span {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mainPage .serviceWrap .serviceBox {
+    margin-top: 89px;
+  }
+  .mainPage .serviceWrap .serviceBox::after {
+    margin-top: 70px;
+  }
+  .mainPage .serviceWrap .serviceBox .serviceText {
+    line-height: 40px;
+  }
+  .mainPage .serviceWrap .serviceBox .serviceText .title {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .mainPage .serviceWrap .serviceBox .serviceText .subTitle {
+    font-size: 18px;
+  }
+  .mainPage .serviceWrap .serviceBox .button {
+    left: 46%;
+  }
+  .mainPage .serviceWrap .serviceBox .button a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainPage .serviceWrap .serviceBox .serviceText .subTitle {
+    font-size: 17px;
+  }
+  .mainPage .serviceWrap .serviceBox .button {
+    left: 42%;
+  }
+  .mainPage .serviceWrap .serviceBox .button a {
+    font-size: 14px;
+  }
+  .mainPage .serviceWrap .serviceBox .button a img {
+    margin-top: 3px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 370px) {
+  .mainPage .serviceWrap .serviceBox .serviceText {
+    width: 80%;
+    line-height: 25px;
+  }
+  .mainPage .serviceWrap .serviceBox .serviceText .subTitle {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .mainPage .serviceWrap .serviceBox .button {
+    left: 42%;
+  }
+  .mainPage .serviceWrap .serviceBox .button a {
+    font-size: 14px;
+  }
+  .mainPage .serviceWrap .serviceBox .button a img {
+    margin-top: 3px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mainPage {
+    /*****************컬렉션*****************/
+  }
+  .mainPage .collectionWrap::before {
+    height: 400px;
+  }
+  .mainPage .collectionWrap .collectionBox .textBox {
+    padding: 0;
+    margin: 0 2.5%;
+  }
+  .mainPage .collectionWrap .collectionBox .textBox .title {
+    font-size: 20px;
+  }
+  .mainPage .collectionWrap .collectionBox .textBox .subTitle {
+    font-size: 18px;
+    margin: 3px;
+  }
+  .mainPage .collectionWrap .collectionItem .cItemBox .cItem .cText a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainPage .collectionWrap .collectionBox {
+    margin-top: 20%;
+  }
+  .mainPage .collectionWrap .collectionBox .textBox .title {
+    font-size: 20px;
+  }
+  .mainPage .collectionWrap .collectionBox .textBox .subTitle {
+    font-size: 18px;
+    margin: 0px;
+  }
+  .mainPage .collectionWrap .collectionItem {
+    width: 80%;
+    margin: 10%;
+  }
+  .mainPage .collectionWrap .collectionItem .cItemBox .cItem {
+    width: 45%;
+  }
+  .mainPage .collectionWrap .collectionItem .cItemBox .cItem .cText {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .mainPage .collectionWrap .collectionItem .cItemBox .cItem .cText a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .mainPage .collectionWrap .collectionBox .textBox .title {
+    font-size: 20px;
+  }
+  .mainPage .collectionWrap .collectionBox .textBox .subTitle {
+    font-size: 14px;
+  }
+  .mainPage .collectionWrap .collectionItem {
+    width: 95%;
+    margin: 5%;
+  }
+  .mainPage .collectionWrap .collectionItem .cItemBox .cItem {
+    margin: 3% 1%;
+  }
+  .mainPage .collectionWrap .collectionItem .cItemBox .cItem .cText {
+    margin-bottom: 10px;
+  }
+  .mainPage .collectionWrap .collectionItem .cItemBox .cItem .cText a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mainPage {
+    /*****************한국*****************/
+  }
+  .mainPage .koreaWrap .koreaBox {
+    margin-top: 53px;
+  }
+  .mainPage .koreaWrap .koreaBox .textBox .title {
+    font-size: 20px;
+  }
+  .mainPage .koreaWrap .koreaBox .textBox .subTitle {
+    font-size: 18px;
+  }
+  .mainPage .koreaWrap .koreaBox .button {
+    left: 44%;
+  }
+  .mainPage .koreaWrap .koreaBox .button a {
+    font-size: 16px;
+  }
+  .mainPage .koreaWrap .koreaBox .button a img {
+    margin-top: 3px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainPage .koreaWrap .koreaBox .textBox .title {
+    margin-bottom: 20px;
+  }
+  .mainPage .koreaWrap .koreaBox .button {
+    left: 38%;
+  }
+  .mainPage .koreaWrap .koreaBox .button a {
+    font-size: 14px;
+  }
+  .mainPage .koreaWrap .koreaBox .button a img {
+    margin-top: 3px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 370px) {
+  .mainPage .koreaWrap .koreaBox .textBox {
+    width: 80%;
+  }
+  .mainPage .koreaWrap .koreaBox .textBox .subTitle {
+    font-size: 13px;
+  }
+  .mainPage .koreaWrap .koreaBox .button a {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* font */
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 900;
+  src: url(../font/NanumSquareEB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 500;
+  src: url(../font/NanumSquareB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 300;
+  src: url(../font/NanumSquareR.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 100;
+  src: url(../font/NanumSquareL.woff) format("woff");
+}
+/*****************공통*****************/
+@media screen and (max-width: 1200px) {
+  .mainPage #fullpage .loginWrap .loginInnerBox {
+    width: 90%;
+    margin: 0 2.5%;
+  }
+  .mainPage #fullpage .loginWrap .loginInnerBox li {
+    margin: 0;
+    padding: 0 25%;
+  }
+  .mainPage #fullpage .loginWrap .loginInnerBox .loginImg {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainPage #fullpage .loginWrap .loginInnerBox {
+    width: 90%;
+    margin: 0 2.5%;
+  }
+  .mainPage #fullpage .loginWrap .loginInnerBox li {
+    margin: 0;
+    padding: 0;
+  }
+  .mainPage #fullpage .loginWrap .loginInnerBox .loginImg {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainPage #fullpage .loginWrap .loginInnerBox {
+    width: 100%;
+    margin: 0 2.5%;
+  }
+  .mainPage #fullpage .loginWrap .loginInnerBox li {
+    margin: 0;
+  }
+  .mainPage #fullpage .loginWrap .loginInnerBox .loginImg {
+    display: none;
+  }
+}
+.mainPage {
+  overflow: hidden;
+}
+.mainPage #fullpage {
+  width: 100%;
+}
+.mainPage #fullpage .loginWrap {
+  /*****************login*****************/
+  width: 100%;
+  height: 68vh;
+  margin-top: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox {
+  max-width: 1260px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox li {
+  float: left;
+  margin: 9%;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .loginImg {
+  width: 32%;
+  height: 65%;
+  background: url(../image/mainBanner_watch4.png) center no-repeat;
+  background-size: contain;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box .h1 {
+  font-size: 32px;
+  color: #111;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginArea {
+  width: 400px;
+  margin-top: 20px;
+  position: relative;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginArea input {
+  width: 100%;
+  padding: 20px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: #949494;
+  outline: none;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginArea input:focus + label {
+  top: 0;
+  font-size: 13px;
+  color: #feca35;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginArea label {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: #949494;
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginArea label.warning {
+  color: #feca35 !important;
+  -webkit-animation: warning 0.3s ease;
+          animation: warning 0.3s ease;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+@-webkit-keyframes warning {
+  0% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+  25% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  50% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+  75% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+}
+@keyframes warning {
+  0% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+  25% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  50% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+  75% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginToggle {
+  position: relative;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginToggle .checkbox {
+  display: none;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginToggle .checkbox:checked + .toggle::after {
+  left: 60%;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginToggle .checkbox:checked + .toggle {
+  background-color: #feca35;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginToggle .toggle {
+  position: relative;
+  display: inline-block;
+  width: 69px;
+  height: 27px;
+  background-color: #111;
+  border-radius: 30px;
+  left: 40%;
+  top: 20px;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginToggle .toggle::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginToggle .toggle p {
+  color: #949494;
+  width: 168px;
+  margin-left: -200%;
+  font-size: 17px;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginBtn {
+  margin-top: 60px;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box form .loginBtn button {
+  width: 100%;
+  height: 50px;
+  background: #111;
+  color: #eee;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box .caption {
+  margin-top: 10px;
+  text-align: center;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box .caption a {
+  font-size: 18px;
+  color: #949494;
+  text-align: center;
+  padding: 0 10px 0;
+}
+.mainPage #fullpage .loginWrap .loginInnerBox .login-box .snsLogin {
+  margin-top: 25px;
+}

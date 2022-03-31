@@ -1,0 +1,610 @@
+//반응형
+$mobile1200: 1200px;
+$mobile767: 767px;
+$mobile640: 640px;
+$mobile480: 480px;
+$mobile370: 370px;
+
+@mixin respond($mobile){
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}
+
+
+/*****************공통*****************/
+$title1200:20px;
+$subTitle1200:18px;
+$aFont1200:16px;
+
+
+
+
+
+
+
+
+.mainPage{
+    /*****************메인 배너*****************/
+    
+    #fullpage{
+        
+        .section.mainWrap{
+            .innerBox{
+                .bannerItem{
+                    .mainText{
+                    }
+                    .textBox{
+                        .mainTitle{
+                        }
+                    }
+                    a{
+                        img{
+                        }
+                    }
+                }
+            }
+        @include respond($mobile1200){
+            .innerBox{
+                .bannerItem{
+                    .mainText{
+                        font-size: 80px;
+                        left: 10%;
+                    }
+                    .textBox{
+                        .mainTitle{
+                            font-size: 25px;
+                        }
+                        .subTitle{
+                            font-size: 20px;
+                        }
+                    }
+                    a{
+                        width: 25%;
+                        top: 53%;
+                        img{}
+                    }
+                }
+            }
+        }
+        @include respond($mobile767){
+            .innerBox{
+                .bannerItem{
+                    .mainText{
+                        font-size: 40px;
+                    }
+                    .textBox{
+                        .mainTitle{
+                            font-size: 20px;
+                        }
+                        .subTitle{
+                            font-size: 16px;
+                        }
+                    }
+                    a{
+                        width: 25%;
+                        top: 53%;
+                        img{}
+                    }
+                }
+            }
+        }
+        @include respond($mobile640){
+            .innerBox{
+                .bannerItem{
+                    .mainText{
+                        bottom: 20%;
+                        left: 35%;
+                    }
+                    .textBox{
+                        text-align: center;
+                        bottom: 14%;
+                        left: 20%;
+                        .mainTitle{
+                            font-size: 20px;
+                        }
+                        .subTitle{
+                            font-size: 14px;
+                        }
+                    }
+                    a{
+                        top: 50%;
+                        right: 33%;
+                        width: 33%;
+                        img{}
+                    }
+                }
+            }
+        }
+        @include respond($mobile480){
+            .innerBox{
+                .bannerItem{
+                    .mainText{
+                        font-size: 30px;
+                        left: 34%;
+                        bottom: 25%;
+                    }
+                    .textBox{
+                        left: 20%;
+                        text-align: center;
+                        .mainTitle{
+                            font-size: 16px;
+                        }
+                        .subTitle{
+                            font-size: 14px;
+                        }
+                    }
+                    a{
+                        right: 28%;
+                        width: 45%;
+                        img{}
+                    }
+                }
+            }
+        }
+        @include respond($mobile370){
+            .innerBox{
+                .bannerItem{
+                    .mainText{
+                        left: 29%;
+                    }
+                    .textBox{
+                        .mainTitle{
+                        }
+                        .subTitle{
+                        }
+                    }
+                    a{
+                        right: 27%;
+                        img{}
+                    }
+                }
+            }
+        }
+
+            
+            .pagerBox{/**pager**/
+                li{
+                    a{
+                    }
+                }
+            @include respond($mobile1200){
+                li{
+                    a{
+                        display: none;
+                    }
+                }
+            }
+            }
+            
+            .scroll{
+                .scroll-icon{
+                    .wheel-outer {
+                    }
+                    
+                    .wheel-inner {
+                    }
+                }
+            }
+        }
+    }
+    .sexWrap{ /*****************젠더*****************/
+        @include respond($mobile1200){
+            .sexBox{
+                margin: 0 2.5%;
+                padding: 10% 0;
+                .textBox{
+                    width: 100%;
+                    margin-left: 0;
+                    .title{
+                        font-size: $subTitle1200;
+                    }
+                    .t1{
+                        font-size: $title1200;
+                    }
+                    .t2{
+                        font-size: $subTitle1200;
+                        margin-top: 2%;
+                    }
+                    .t3{
+                        font-size: $subTitle1200;
+                    }
+                }
+                .gender{
+                    li{
+                        width: 35%;
+                        margin: 5%;
+                        a{
+                            height: 420px;
+                        }
+                    }
+                    .women{
+                        a{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        @include respond($mobile480){
+            .sexBox{
+                .textBox{
+                    .title{
+                        font-size: $subTitle1200;
+                    }
+                    .t1{
+                        font-size: $title1200;
+                    }
+                    .t2{
+                        font-size: 16px;
+                        margin-top: 2%;
+                    }
+                    .t3{
+                        font-size: 16px;
+                    }
+                }
+                .gender{
+                    li{
+                        margin: 6%;
+                        a{
+                            height: 300px;
+                        }
+                    }
+                    .men{
+                        a{
+                            .t1{
+                                margin-top: 100px;
+                            }
+                            .t2{
+                                font-size: $title1200;
+                            }
+                        }
+                    }
+                    .women{
+                        a{
+                            .t1{
+                                margin-top: 100px;
+                            }
+                            .t2{
+                                font-size: $title1200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include respond($mobile370){
+            .sexBox{
+                .textBox{
+                    .title{
+                        font-size: $subTitle1200;
+                    }
+                    .t1{
+                        font-size: $title1200;
+                        letter-spacing: 0;
+                    }
+                    .t2{
+                        // font-size: 16px;
+                        display: none;
+                    }
+                    .t3{
+                        font-size: 14px;
+                        strong{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .gender{
+                    li{
+                        margin: 6%;
+                        a{
+                            height: 300px;
+                        }
+                    }
+                    .men{
+                        a{
+                            .t1{
+                                margin-top: 100px;
+                            }
+                            .t2{
+                                font-size: $title1200;
+                            }
+                            span{
+                                opacity: 1;
+                            }
+                        }
+
+
+                    }
+                    .women{
+                        a{
+                            .t1{
+                                margin-top: 100px;
+                            }
+                            .t2{
+                                font-size: $title1200;
+                            }
+                            span{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    /*****************서비스*****************/
+    @include respond($mobile1200){
+        .serviceWrap{
+            .serviceBox{
+                margin-top: 89px;
+                &::after{
+                    margin-top: 70px;
+                }
+
+                .serviceText{
+                    line-height: 40px;
+                    .title{
+                        font-size: $title1200;
+                        margin-bottom: 50px;
+                    }
+                    .subTitle{
+                        font-size: $subTitle1200;
+                    }
+                }
+                .button{
+                    left: 46%;
+                    a{
+                        font-size: $aFont1200;
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile480){
+        .serviceWrap{
+            .serviceBox{
+                .serviceText{
+                    .subTitle{
+                        font-size: 17px;
+                    }
+                }
+                .button{
+                    left: 42%;
+                    a{
+                        font-size: 14px;
+                        img{
+                            margin-top: 3px;
+                            transform: scale(.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile370){
+        .serviceWrap{
+            .serviceBox{
+                .serviceText{
+                    width: 80%;
+                    line-height: 25px;
+                    .subTitle{
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                }
+                .button{
+                    left: 42%;
+                    a{
+                        font-size: 14px;
+                        img{
+                            margin-top: 3px;
+                            transform: scale(.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    
+    @include respond($mobile1200){/*****************컬렉션*****************/
+        .collectionWrap{
+            &::before{
+                height: 400px;
+            }
+            .collectionBox{
+                .textBox{
+                    padding: 0;
+                    margin: 0 2.5%;
+                    .title{
+                        font-size: $title1200;
+                    }
+                    .subTitle{
+                        font-size: $subTitle1200;
+                        margin: 3px;
+                    }
+                }
+            }
+            .collectionItem{
+                .cItemBox{
+                    .cItem{
+                        .cImg{
+                            span{
+
+                            }
+                        }
+                        .cText{
+                            a{
+                                font-size: $aFont1200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile480){
+        .collectionWrap{
+            .collectionBox{
+                margin-top: 20%;
+                .textBox{
+                    .title{
+                        font-size: $title1200;
+                    }
+                    .subTitle{
+                        font-size: $subTitle1200;
+                        margin: 0px;
+                    }
+                }
+            }
+            .collectionItem{
+                width: 80%;
+                margin: 10%;
+                .cItemBox{
+                    .cItem{
+                        width: 45%;
+                        
+                        .cImg{
+                            span{
+
+                            }
+                        }
+                        .cText{
+                            margin-top: 0;
+                            margin-bottom: 25px;
+                            a{
+                                font-size: $aFont1200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile370){
+        .collectionWrap{
+            .collectionBox{
+                .textBox{
+                    .title{
+                        font-size: $title1200;
+                    }
+                    .subTitle{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .collectionItem{
+                width: 95%;
+                margin: 5%;
+                .cItemBox{
+                    .cItem{
+                        margin: 3% 1%;
+
+                        .cImg{
+                            span{
+
+                            }
+                        }
+                        .cText{
+                            margin-bottom: 10px;
+                            a{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    @include respond($mobile1200){ /*****************한국*****************/
+        .koreaWrap{
+            .koreaBox{
+                margin-top: 53px;
+    
+                .textBox{
+                    .title{
+                        font-size: $title1200;
+                    }
+                    .subTitle{
+                        font-size: $subTitle1200;
+                    }
+                }
+                .button{
+                    left: 44%;
+                    a{
+                        font-size: $aFont1200;
+                        img{
+                            margin-top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    @include respond($mobile480){
+        .koreaWrap{
+            .koreaBox{
+                .textBox{
+                    .title{
+                        margin-bottom: 20px;
+                    }
+                    .subTitle{
+                        
+                    }
+                }
+                .button{
+                    left: 38%;
+                    a{
+                        font-size: 14px;
+                        img{
+                            margin-top: 3px;
+                            transform: scale(.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond($mobile370){
+        .koreaWrap{
+            .koreaBox{
+                .textBox{
+                    width: 80%;
+                    .title{
+
+                    }
+                    .subTitle{
+                        font-size: 13px;
+                    }
+                }
+                .button{
+                    a{
+                        font-size: 13px;
+                        img{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+}

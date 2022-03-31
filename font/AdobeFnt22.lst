@@ -1,0 +1,156 @@
+%!Adobe-FontList 1.22
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NanumSquareOTFB
+FamilyName:NanumSquareOTF
+StyleName:Bold
+FullName:NanumSquareOTF Bold
+MenuName:나눔스퀘어OTF Bold
+StyleBits:0
+FamilyNameNative:나눔스퀘어OTF
+StyleNameNative:Bold
+FullNameNative:나눔스퀘어OTF Bold
+WritingScript:Korean
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareB.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:514816
+FileModTime:1474445892
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,NanumSquareOTF Bold
+NameArray:3,Mac,4,나눔스퀘어OTF Bold
+NameArray:0,Win,1,NanumSquareOTF Bold
+NameArray:0,Win,16,NanumSquareOTF
+NameArray:3,Win,1,나눔스퀘어OTF Bold
+NameArray:3,Win,16,나눔스퀘어OTF
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareB.woff
+FileModTime:1644318484
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NanumSquareOTFEB
+FamilyName:NanumSquareOTF
+StyleName:ExtraBold
+FullName:NanumSquareOTF ExtraBold
+MenuName:나눔스퀘어OTF ExtraBold
+StyleBits:0
+FamilyNameNative:나눔스퀘어OTF
+StyleNameNative:ExtraBold
+FullNameNative:나눔스퀘어OTF ExtraBold
+WritingScript:Korean
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareEB.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:523540
+FileModTime:1474445892
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,NanumSquareOTF ExtraBold
+NameArray:3,Mac,4,나눔스퀘어OTF ExtraBold
+NameArray:0,Win,1,NanumSquareOTF ExtraBold
+NameArray:0,Win,16,NanumSquareOTF
+NameArray:3,Win,1,나눔스퀘어OTF ExtraBold
+NameArray:3,Win,16,나눔스퀘어OTF
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareEB.woff
+FileModTime:1644318485
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NanumSquareOTFL
+FamilyName:NanumSquareOTF
+StyleName:Light
+FullName:NanumSquareOTF Light
+MenuName:나눔스퀘어OTF Light
+StyleBits:0
+FamilyNameNative:나눔스퀘어OTF
+StyleNameNative:Light
+FullNameNative:나눔스퀘어OTF Light
+WritingScript:Korean
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareL.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:514976
+FileModTime:1474445892
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,NanumSquareOTF Light
+NameArray:3,Mac,4,나눔스퀘어OTF Light
+NameArray:0,Win,1,NanumSquareOTF Light
+NameArray:0,Win,16,NanumSquareOTF
+NameArray:3,Win,1,나눔스퀘어OTF Light
+NameArray:3,Win,16,나눔스퀘어OTF
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareL.woff
+FileModTime:1644318457
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NanumSquareOTFR
+FamilyName:NanumSquareOTF
+StyleName:Regular
+FullName:NanumSquareOTF Regular
+MenuName:나눔스퀘어OTF
+StyleBits:0
+FamilyNameNative:나눔스퀘어OTF
+StyleNameNative:Regular
+FullNameNative:나눔스퀘어OTF Regular
+WritingScript:Korean
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareR.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:492584
+FileModTime:1474445892
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,NanumSquareOTF Regular
+NameArray:3,Mac,4,나눔스퀘어OTF Regular
+NameArray:3,Mac,18,나눔스퀘어OTF
+NameArray:0,Win,1,NanumSquareOTF
+NameArray:0,Win,16,NanumSquareOTF
+NameArray:3,Win,1,나눔스퀘어OTF
+NameArray:3,Win,16,나눔스퀘어OTF
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\iibi20201\Desktop\도병덕-BREITLING(02.24)\Font\NanumSquareR.woff
+FileModTime:1644318444
+%EndFont
+
